@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Регистрация</title>
+</head>
+<body>
+	<section class="registration">
+		<div class="registration__form">
+			<div class="registration-form">
+				<h1 class="registration-form__title">Регистрация</h1>
+				<form id="registration-form" action="#" class="registration-form__body">
+					<div class="registration-form__row">
+						<div class="registration-form__column">
+							<div class="registration-form__line">
+								<label class="registration-form__label" for="name">Имя <span>*</span></label>
+								<input type="text" id="name" class="registration-form__input _required">
+								<div class="registration-form__text-error">Обязательное поле</div>
+							</div>
+						</div>
+						<div class="registration-form__column">
+							<div class="registration-form__line">
+								<label class="registration-form__label" for="lastname">Фамилия <span>*</span></label>
+								<input type="text" id="lastname" class="registration-form__input _required">
+								<div class="registration-form__text-error">Обязательное поле</div>
+							</div>
+						</div>
+					</div>
+					<div class="registration-form__row">
+						<div class="registration-form__column">
+							<div class="registration-form__line">
+								<label class="registration-form__label" for="email">Email <span>*</span></label>
+								<input type="text" id="email" class="registration-form__input _required _email">
+								<div class="registration-form__text-error">Обязательное поле</div>
+							</div>
+						</div>
+						<div class="registration-form__column">
+							<div class="registration-form__line">
+								<label class="registration-form__label" for="phone">Телефон <span>*</span></label>
+								<input type="tel" id="phone" class="registration-form__input _required">
+								<div class="registration-form__text-error">Обязательное поле</div>
+							</div>
+						</div>
+					</div>
+					<div class="registration-form__line">
+						<label class="registration-form__label" for="password">Пароль <span>*</span></label>
+						<div class="registration-form__password">
+							<input type="password" id="password" class="registration-form__input _required">
+							<img class="icon-password" src="./img/eye-slash.svg" alt="icon">
+						</div>
+						<div class="registration-form__text-error">Обязательное поле</div>
+					</div>
+					<div class="registration-form__line">
+						<label class="registration-form__label" for="inn">ИНН <span>*</span></label>
+						<input type="phone" id="inn" class="registration-form__input _inn _required">
+						<div class="registration-form__text-error">Обязательное поле</div>
+						<div class="registration-form__text-error-inn">Ваша компания уже зарегистрирована, пожалуйста обратитесь к менеджеру вашего аккаунта или <a href="https://github.com/andrew-soldat" target="_blank">напишите нам</a> </div>
+					</div>
+					<div class="registration-form__line">
+						<label class="registration-form__label"><span>*</span> - обязательные поля</label>
+					</div>
+					<div class="registration-form__line">
+						<div class="checkbox">
+							<input type="checkbox" id="check">
+							<label class="checkbox__label" for="check">
+								Да, я хочу получать письма с новостями и предложениями
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="registration-form__button button">Далее</button>
+				</form>
+			</div>
+		</div>
+		<div class="registration__img">
+			<img src="./img/01.jpg" alt="">
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./jquery.maskedinput.min.js"></script>
+	<script src="./app.js"></script>
+</body>
+</html>
